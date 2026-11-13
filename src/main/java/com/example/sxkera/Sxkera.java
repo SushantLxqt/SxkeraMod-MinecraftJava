@@ -1,5 +1,6 @@
 package com.example.sxkera;
 
+import com.example.sxkera.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
 import net.minecraft.resources.Identifier;
@@ -13,7 +14,7 @@ public class Sxkera implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		LOGGER.info("Hello Fabric world!");
+		ModItems.registerModItems();
 	}
 
 	public static Identifier id(String path) {
