@@ -1,0 +1,38 @@
+{
+	"schemaVersion": 1,
+	"id": "sxkera",
+	"version": "${version}",
+	"name": "Sxkera",
+	"description": "My first mod ever!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/sxkera/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.example.sxkera.Sxkera"
+		],
+		"client": [
+			"com.example.sxkera.client.SxkeraClient"
+		]
+	},
+	"mixins": [
+		"sxkera.mixins.json",
+		{
+			"config": "sxkera.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.20.1",
+		"minecraft": "~1.21.11",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
